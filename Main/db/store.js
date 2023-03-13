@@ -39,7 +39,7 @@ class Store {
     // Add a unique id to the note 
     const newNote = { title, text, id: uuidv1() };
 
-    // Get all notes, add the new note, write all the updated notes, return the newNote
+    
     return this.getNotes()
       .then((notes) => [...notes, newNote])
       .then((updatedNotes) => this.write(updatedNotes))
@@ -47,7 +47,7 @@ class Store {
   }
 
   removeNote(id) {
-    // Get all notes, remove the note with the given id, write the filtered notes
+    
     return this.getNotes()
       .then((notes) => notes.filter((note) => note.id !== id))
       .then((filteredNotes) => this.write(filteredNotes));
