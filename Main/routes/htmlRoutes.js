@@ -1,12 +1,12 @@
 const path = require('path');
 const router = require('express').Router();
 
-// "/notes" responds with the notes.html file
+// "/notes" sends to notes.html page
 router.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/notes.html'));
 });
 
-// All other routes respond with the index.html file
+// loads main index.html page
 router.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
