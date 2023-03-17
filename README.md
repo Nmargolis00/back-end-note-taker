@@ -13,7 +13,8 @@ N/A
 
 
 
-![Sample Logo](./Images/Sample%20Logo.PNG)
+![First Page](./Images/Website%201.PNG)
+![Second Page](./Images/Website%202.PNG)
 
 
 
@@ -32,7 +33,7 @@ N/A
 
 ## Features
 
-Makes you a logo!
+Saves notes on a database for future use and edits!
 
 ## How to Contribute
 
@@ -40,4 +41,4 @@ N/A
 
 ## Tests
 
-npm test will run tests for the program
+N/A
